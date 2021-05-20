@@ -1,0 +1,13 @@
+{
+    "name": "GET LOGO! Security-Hint",
+    "description": "Get Security-Hint Token from the 'Siemens LOGO! 12/24 RCE xxx8 0BA0' and save it as txt.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "run_at": "document_idle",
+        "js": ["background.js"]
+      }
+    ]
+}
